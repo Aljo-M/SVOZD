@@ -1,0 +1,32 @@
+.contactInfo {
+  h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.infoItem {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  
+  svg {
+    color: var(--primary-color);
+    flex-shrink: 0;
+  }
+  
+  strong {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  
+  p {
+    color: var(--secondary-color);
+  }
+}

@@ -1,0 +1,14 @@
+services:
+  app:
+    container_name: ${CONTAINER_NAME:-svozd}
+    image: ${CONTAINER_NAME:-svozd}-image
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    networks:
+      - nginx-proxy-manager_default
+
+networks:
+  nginx-proxy-manager_default:
+    external: true
